@@ -22,8 +22,10 @@ class ProductForm
                     ->preload()    // โหลดข้อมูลมาเตรียมไว้เลย (เหมาะกับข้อมูลไม่เยอะมาก)
                     ->required(),
                 DatePicker::make('EXP')
+                    ->label('วันหมดอายุ')
                     ->required(),
                 TextInput::make('qty')
+                    ->label('จำนวน')
                     ->required()
                     ->numeric()
                     ->default(0),
